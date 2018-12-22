@@ -8,11 +8,11 @@ Instead of modifying the file as the logged-in user, the script instead utilises
 
 ## What it does
 - When disabling:
--- Uses `Schtasks` via `PSExec` to disable the task and set its command to `CMD /C REM`, which does nothing, so that the task would do nothing even if run by force
--- Uses `Set-ACL` to block read/write access to all users of the device, so that nothing can make valid use of it
+    - Uses `Schtasks` via `PSExec` to disable the task and set its command to `CMD /C REM`, which does nothing, so that the task would do nothing even if run by force
+    - Uses `Set-ACL` to block read/write access to all users of the device, so that nothing can make valid use of it
 - When re-enabling:
--- Uses `Schtasks` via `PSExec` to re-enable the task and replace its settings to Windows' defaults
--- Uses `Set-ACL` to return all user read/write permissions to the file so that the system can make use of it
+    - Uses `Schtasks` via `PSExec` to re-enable the task and replace its settings to Windows' defaults
+    - Uses `Set-ACL` to return all user read/write permissions to the file so that the system can make use of it
 
 ## Acknowledgements
 The script has been tested and worked fine on an English Windows 10 VM. It also worked fine on a German VM I had for testing purposes, although it threw some errors because it wants access to be qualified to `Administratoren` instead of the English `Administrators`. I don't consider this a big enough issue to worry about.
