@@ -18,9 +18,9 @@ Instead of modifying the file as the logged-in user, the script instead utilises
 The script has been tested and worked fine on an English Windows 10 VM. It also worked fine on a German VM I had for testing purposes, although it threw some errors because it wants access to be qualified to `Administratoren` instead of the English `Administrators`. I don't consider this a big enough issue to worry about.
 
 ## Guarantee
-I attach no guarantee of functionality to this script. Use it at your own risk. If you bollocks up your system from using this I won't be held responsible.
+I attach no guarantee of functionality to this script. Use it at your own risk.  
+If you bollocks up your system from using this I won't be held responsible.
 
 ## Feedback
 Did this script work strangely on your system or cause problems? [File an issue.](https://github.com/seagull/disable-automaticrestarts/issues)  
-Did everything work perfectly? [Follow me on Twttr.](https://www.twitter.com/seagull)  
-(I don't post and won't reply to messages.)
+Did everything work perfectly? [Follow me on Twttr.](https://www.twitter.com/seagull) (I don't post and won't reply to messages.)
