@@ -21,6 +21,6 @@ The script has been tested and worked fine on an English Windows 10 VM. It also 
 I attach no guarantee of functionality to this script. Use it at your own risk. If you bollocks up your system from using this I won't be held responsible.
 
 ## Feedback
-Did this script work strangely on your system or cause problems? [File an issue.](https://github.com/seagull/disable-automaticrestarts/issues)
+Did this script work strangely on your system or cause problems? [File an issue.](https://github.com/seagull/disable-automaticrestarts/issues)  
 Did everything work perfectly? [Follow me on Twttr.](https://www.twitter.com/seagull)  
 (I don't post and won't reply to messages.)
