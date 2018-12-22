@@ -4,7 +4,7 @@ I believe power users should have sole authority of when their devices reboot, a
 
 ## How it works
 The script is fairly simple. The mechanism by which reboots are achieved is a Scheduled Task located in System32 in XML format. Modifying this file causes Windows to reject it out of well-placed concerns for security; while this is a quick and easy way to accomplish the task, it's messy and can't be reverted.  
-Instead of modifying the file as the logged-in user, the script instead utilises the [PSExec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) binary from Microsoft SysInternals to carry through a series of modifications as the `NT AUTHORITY\SYSTEM` user, which overrides Windows' security rejection. This way, all changes made can easily be reverted in the case of unforseen consequences.
+Instead of modifying the file as the logged-in user, the script instead utilises the [PSExec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec) binary from Microsoft SysInternals to carry through a series of modifications as the `NT AUTHORITY\SYSTEM` user, which overrides Windows' security rejection. This way, all changes made can easily be reverted in the case of unforeseen consequences.
 
 ## What it does
 - When disabling:
