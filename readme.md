@@ -1,4 +1,6 @@
 # seagull's Scheduled-Task Wake Disabler
+**How do I download/run this?** Scroll to the "Installation" section.
+
 Windows 10 and onward were designed with a much more heavily-handed approach to updates than previous iterations. Perhaps as a response to the masses refusing for months to reboot their systems and then blaming the company when they get hit by exploits, MS have removed a lot of options from Windows Updates' user experience.
 This process of dragging users kicking and screaming into responsibility has created an unfortunate by-product in a series of scheduled tasks that will wake a device up in order to install updates if it knows any are due.
 
@@ -10,6 +12,10 @@ This script has been re-written entirely from its December 2018 iteration. Thank
 ## What it does
 It uses `get-scheduledTask` to enumerate all enabled tasks on the device with the `WakeToRun` privilege, using `icacls` and `takeown` to make them the property of the person running the script. This is not dissimilar to what the older script did but the process now incurs significantly less of a headache.
 If the user chooses so, a list containing the tasks can be produced without _doing_ anything to them; alternatively, they are iterated through and their privileges to wake the system are revoked.
+
+## Installation
+The script does not need to be installed; it is a script. Download the .ps1 file visible in the project files above as a raw file from GitHub and move it to your Desktop. You will probably need to allow PowerShell to execute it first, so right-click the Start Menu and select "Windows PowerShell (Admin)" or "Windows Terminal (Admin)". In the box that appears type `Set-ExecutionPolicy Unrestricted` and then select A (or Y if there is no A option) to the prompt.
+To run the script, right-click it on your Desktop and select "Open with PowerShell". It won't do anything without telling you first.
 
 ## Acknowledgements
 This script uses some logic from @freMea who left a very helpful comment in the issues of the original script.
