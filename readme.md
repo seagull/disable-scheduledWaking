@@ -17,6 +17,9 @@ If the user chooses so, a list containing the tasks can be produced without _doi
 The script does not need to be installed; it is a script. Download the .ps1 file visible in the project files above as a raw file from GitHub and move it to your Desktop. You will probably need to allow PowerShell to execute it first, so right-click the Start Menu and select "Windows PowerShell (Admin)" or "Windows Terminal (Admin)". In the box that appears type `Set-ExecutionPolicy Unrestricted` and then select A (or Y if there is no A option) to the prompt.
 To run the script, right-click it on your Desktop and select "Open with PowerShell". It won't do anything without telling you first.
 
+**The script closes immediately after launching/I receive 'Missing file specification after redirection operator' errors**
+That means you right-clicked the .ps1 file and selected "Save Target As". _Don't do that!_ Click through to the .ps1 file above, then click "raw" in the top-right. Save the page that loads in as your .ps1 file instead. You downloaded an HTML document before.
+
 ## Acknowledgements
 This script uses some logic from @freMea who left a very helpful comment in the issues of the original script.
 It has been tested on Windows 10 and Windows 11, English and German.
