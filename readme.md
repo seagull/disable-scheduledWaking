@@ -31,4 +31,4 @@ If you bollocks up your system from using this I won't be held responsible.
 
 ## Feedback
 Did this script work strangely on your system or cause problems? [File an issue.](https://github.com/seagull/disable-automaticrestarts/issues)  
-Did everything work perfectly? [Follow me on Twttr.](https://www.twitter.com/seagull) (I don't post and won't reply to messages.)
+Did everything work perfectly? [Follow me on bSky](https://bsky.app/profile/seagull.io) – I don't post, but I like watching the numbers go up.
